@@ -1,2 +1,9 @@
 server:
   port: 8080
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG # For Spring Security
+        web: DEBUG      # For Spring Web/MVC

@@ -1,0 +1,10 @@
+package com.auth.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration;
+
+@Configuration
+@Import(OAuth2AuthorizationServerConfiguration.class)
+public class AuthorizationServerConfig {
+}

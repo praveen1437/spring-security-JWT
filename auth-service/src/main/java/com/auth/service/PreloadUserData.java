@@ -4,7 +4,6 @@ package com.auth.service;
 
 import com.auth.entities.UserEntity;
 import com.auth.repository.UserRepository;
-import com.auth.vo.User;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -21,8 +20,8 @@ public class  PreloadUserData {
     @PostConstruct
     void loadUserData() {
         UserEntity userEntity = new UserEntity();
-        userEntity.setUserName("Praveen");
-        userEntity.setPassWord(passwordEncoder.encode("praveen"));
+        userEntity.setUserName("1232");
+        userEntity.setPassWord(passwordEncoder.encode("365656"));
         System.out.println("password : " + userEntity.getPassWord());
         userRepository.save(userEntity);
     }

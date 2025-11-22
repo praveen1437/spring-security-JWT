@@ -12,8 +12,8 @@ public class HomeController {
         return "Welcome";
     }
 
-    @PostMapping("/login")
+   /* @PostMapping("/login")
     public String login() {
         return "Welcome";
-    }
+    }*/
 }
